@@ -14,7 +14,7 @@ Suppose your instance is running and has a public IP address, but `ssh` cannot c
 
 **Your answer:** Which path did you take in the console (service → page → tab)?
 
-...
+ec2 -> instances -> instance name -> security
 
 ## 2. Lambda: why didn't my function run?
 
@@ -26,7 +26,7 @@ Suppose you uploaded a new book to your bucket, but several minutes later MongoD
 
 **Your answer:** Which path did you take in the console (service → page → tab)?
 
-...
+lambda -> function -> configuration -> triggers
 
 ## 3. Lambda: where do I find the error?
 
@@ -38,7 +38,7 @@ Suppose the function did start, but MongoDB still has no document for the book. 
 
 **Your answer:** Which path did you take in the console (service → page → tab)?
 
-...
+lambda -> function -> monitor -> view CloudWatch logs -> log stream name
 
 ## 4. EC2 or Lambda: a backlog or new uploads?
 
@@ -54,4 +54,4 @@ For comparison, typical times in this lab:
 
 **Your answer:**
 
-...
+EC2 for the first one because the books are already in my bucket and I can run it for all books at once. Lambda for the second one because it would need to start quickly and run quickly.
